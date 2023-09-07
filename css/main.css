@@ -1,0 +1,128 @@
+.Me {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.Me-content{
+
+    max-width: 40%;
+}
+
+.Me-content h1{
+    font-size: 5vmin;
+    font-weight:700 ;
+}
+
+.Me-content-d{
+    color: #36249cd4;
+    font-size:  3.5vmin;
+    font-weight:700 ;
+
+}
+
+
+.Me-content-i{
+    color: rgb(255, 255, 255);
+    font-size:  2vmin;
+    font-weight:700 ;
+    margin: 15px 0px ;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    width:45%;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to right, #ff99ff 0%, #00ffcc 100%);
+    width: 45%;
+    border-radius: 12px;
+    font-size:1.2vw;
+    color: #ffffff;
+    border: 2.5px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+
+}
+
+.btn-box a:hover{
+    color: rgb(37, 218, 218);
+    border-color: rgb(95, 90, 90);
+}
+
+
+.Me-media{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 40%;
+    margin-right: 20px;
+}
+
+.Me-media a{
+    position: relative;
+    border: 2.3px solid #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Me-media a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #99ffcc 0%, #66ccff 100%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.Me-media a:hover::before{
+    width: 100%;
+
+}
+
